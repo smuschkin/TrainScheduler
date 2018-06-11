@@ -1,0 +1,12 @@
+.jumbotron {
+    background-image: url("../TrainScheduler/train.jpg");
+    background-size: 100%;
+    color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title {
+    font-size: 80px;
+    color: white;
+    margin-top: 50px;
+}
