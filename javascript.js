@@ -58,9 +58,12 @@ database.ref().on("child_added", function (childsnapshot) {
     // console.log(minutesAway);
 // now + minute away
 
-    var firstArrivalMoment = moment(firstArrival, "HH:mm").subtract(1, "years");
+    var firstArrivalMoment = moment(firstArrival, "HH:mm").subtract("1, years");
 
     var firstArrivalMinutes = moment().diff(moment(firstArrivalMoment), "minutes");
+
+    var currentTime = moment();
+
     var timeRemainder = firstArrivalMinutes%frequency;
     
     var minutesAway = frequency - timeRemainder; 
